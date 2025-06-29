@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Consulta | Bufete Legal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Bufete Legal</h1>
+            <p>Solicitud de consulta gratuita</p>
+        </div>
+        <nav>
+            <a href="index.html">← Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main class="pagina-consulta">
+        <section class="formulario-consulta">
+            <h2><i class="fas fa-edit"></i> Formulario de consulta</h2>
+            <form id="form-cita">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo*</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono*</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="servicio">Servicio de interés*</label>
+                    <select id="servicio" required>
+                        <option value="">Seleccione...</option>
+                        <option>Derecho Penal</option>
+                        <option>Derecho Civil</option>
+                        <option>Derecho Laboral</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Describa brevemente su caso*</label>
+                    <textarea id="mensaje" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-enviar">
+                    <i class="fas fa-paper-plane"></i> Enviar solicitud
+                </button>
+            </form>
+        </section>
+
+        <section class="info-contacto">
+            <h3><i class="fas fa-info-circle"></i> Información importante</h3>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Responderemos en menos de 24 horas</li>
+                <li><i class="fas fa-check-circle"></i> Consulta inicial sin costo</li>
+                <li><i class="fas fa-check-circle"></i> Confidencialidad garantizada</li>
+            </ul>
+            
+            <div class="contacto-emergencia">
+                <h4><i class="fas fa-phone-alt"></i> Contacto urgente:</h4>
+                <p>+123 456 7890</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Bufete Legal. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
